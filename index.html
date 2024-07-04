@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio APIs</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body">
+    <div style="text-align: center;">
+        <h1>Conversor de monedas</h1>
+
+        <div id="form"
+            style="border-style: solid; border-width: 1px;  border-color: black; margin: 10px; padding: 10px; display: inline-block  ;">
+            <h2>Pesos CLP</h2>
+            <input type="number" id="numeroIngresado">
+            <h3>Moneda a convertir</h3>
+            <div style="display: flex; flex-direction: column; gap: 5px;">
+                <select id="moneda" style="text-align: center;">
+                    <option value="dolar">Dólares</option>
+                    <option value="euro">Euros</option>
+                </select>
+                <button id="buscar" onclick="buscar()">Buscar</button>
+                <h2 id="resultado"></h2>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="grafica">
+        <canvas id="chart"></canvas>
+    </div>
+    <script src="app.js"></script>
+    </body>
+
+</html>
